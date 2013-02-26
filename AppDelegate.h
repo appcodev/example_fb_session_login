@@ -31,7 +31,7 @@ extern NSString *const FBSessionStateChangedNotification;
 
 //facebook #5
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
-//facebook #11 close session
+//facebook #10 close session
 - (void)closeSession;
 
 @end
