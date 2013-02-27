@@ -137,6 +137,12 @@ enum{
     return self;
 }
 
+-(void)onExit{
+    [super onExit];
+    NSLog(@"onExit");
+    [[NSNotificationCenter defaultCenter] removeObserver:self]; 
+}
+
 -(void)onMenuClick:(CCMenuItemImage*)menu{
     if(!action){
         [SoundManager playSound:SOUND_BEEP];
